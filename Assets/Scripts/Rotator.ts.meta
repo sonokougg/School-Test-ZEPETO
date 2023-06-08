@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 821bd4940139e244cb77757839517200
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Rotator extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    constructor()
+    {\r\n        super(...arguments);\r\n        this.rotatorX = 0;\r\n        this.rotatorY
+    = 0;\r\n        this.rotatorZ = 0;\r\n    }\r\n    Start() {\r\n    }\r\n   
+    Update() {\r\n        this.transform.Rotate(this.rotatorX, this.rotatorY, this.rotatorZ);\r\n   
+    }\r\n}\r\nexports.default = Rotator;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUm90YXRvci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIlJvdGF0b3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxpREFBcUQ7QUFFckQsTUFBcUIsT0FBUSxTQUFRLHFDQUFxQjtJQUExRDs7UUFDVyxhQUFRLEdBQVksQ0FBQyxDQUFDO1FBQ3RCLGFBQVEsR0FBWSxDQUFDLENBQUM7UUFDdEIsYUFBUSxHQUFZLENBQUMsQ0FBQztJQVNqQyxDQUFDO0lBUEcsS0FBSztJQUVMLENBQUM7SUFDRCxNQUFNO1FBQ0YsSUFBSSxDQUFDLFNBQVMsQ0FBQyxNQUFNLENBQUMsSUFBSSxDQUFDLFFBQVEsRUFBRSxJQUFJLENBQUMsUUFBUSxFQUFFLElBQUksQ0FBQyxRQUFRLENBQUMsQ0FBQztJQUN2RSxDQUFDO0NBRUo7QUFaRCwwQkFZQyJ9","assetPath":"Assets/Scripts/Rotator.ts","manifest":{"properties":[{"assembly":"mscorlib","name":"rotatorX","type":"System.Single","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"rotatorY","type":"System.Single","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]},{"assembly":"mscorlib","name":"rotatorZ","type":"System.Single","isArray":false,"initValue":["0"],"enumKeys":[],"enumValues":[],"attributes":[]}],"name":"Rotator","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: 1cfdcab55bb01892fe8924c571ab0909
+  onlyWriteTrigger: 0
