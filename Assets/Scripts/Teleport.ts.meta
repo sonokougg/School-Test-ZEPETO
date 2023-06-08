@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 7e738471df8ed4f4480997ceb5515fdb
+importerOverride: ZEPETO.Script.Compiler:ZEPETO.Script:TypescriptAssetImporter
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1123457745, guid: 54cf806323ffe4418a4ce4cc63fe6b9d, type: 3}
+  isAssemblyDeclarations: 0
+  assembly: 
+  generateAllTypes: 1
+  types: []
+  generateWrapper: 0
+  overrideWrapperTypes: 0
+  wrapperTypes: []
+  WrapperFilters: []
+  wrapperOutputDirectory: Generated
+  compiledResult: '{"source":"\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\",
+    { value: true });\r\nconst __UnityEngine__ = require(\"UnityEngine\");\r\nconst
+    ZEPETO_Character_Controller_1 = require(\"ZEPETO.Character.Controller\");\r\nconst
+    UnityEngine_1 = require(\"UnityEngine\");\r\nconst ZEPETO_Script_1 = require(\"ZEPETO.Script\");\r\nclass
+    Teleport extends ZEPETO_Script_1.ZepetoScriptBehaviour {\r\n    Start() {\r\n       
+    // Set Local zepeto character \r\n        ZEPETO_Character_Controller_1.ZepetoPlayers.instance.OnAddedLocalPlayer.AddListener(()
+    => {\r\n            this.zepetoCharacter = ZEPETO_Character_Controller_1.ZepetoPlayers.instance.LocalPlayer.zepetoPlayer.character;\r\n       
+    });\r\n    }\r\n    OnTriggerEnter(collider) {\r\n        if (this.zepetoCharacter
+    == null || __UnityEngine__.Object.op_Inequality(collider.gameObject, this.zepetoCharacter.gameObject))\r\n           
+    return;\r\n        // Teleport\r\n        this.zepetoCharacter.Teleport(new UnityEngine_1.Vector3(0,
+    0, 0), UnityEngine_1.Quaternion.identity);\r\n    }\r\n}\r\nexports.default =
+    Teleport;\r\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVGVsZXBvcnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJUZWxlcG9ydC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw2RUFBNkU7QUFDN0UsNkNBQTREO0FBQzVELGlEQUFzRDtBQUV0RCxNQUFxQixRQUFTLFNBQVEscUNBQXFCO0lBSXZELEtBQUs7UUFDRCw4QkFBOEI7UUFDOUIsMkNBQWEsQ0FBQyxRQUFRLENBQUMsa0JBQWtCLENBQUMsV0FBVyxDQUFDLEdBQUUsRUFBRTtZQUN0RCxJQUFJLENBQUMsZUFBZSxHQUFHLDJDQUFhLENBQUMsUUFBUSxDQUFDLFdBQVcsQ0FBQyxZQUFZLENBQUMsU0FBUyxDQUFDO1FBQ3JGLENBQUMsQ0FBQyxDQUFDO0lBQ1AsQ0FBQztJQUVELGNBQWMsQ0FBQyxRQUFrQjtRQUM3QixJQUFHLElBQUksQ0FBQyxlQUFlLElBQUksSUFBSSwyQkFPOHdVLGFBQWMsQ0FQeHhVLFFBQVEsQ0FBQyxVQUFVLEVBQUksSUFBSSxDQUFDLGVBQWUsQ0FBQyxVQUFVLENBQUE7WUFDckYsT0FBTztRQUVYLFdBQVc7UUFDWCxJQUFJLENBQUMsZUFBZSxDQUFDLFFBQVEsQ0FBQyxJQUFJLHFCQUFPLENBQUMsQ0FBQyxFQUFDLENBQUMsRUFBQyxDQUFDLENBQUMsRUFBRSx3QkFBVSxDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBQzNFLENBQUM7Q0FFSjtBQW5CRCwyQkFtQkMifQ==","assetPath":"Assets/Scripts/Teleport.ts","manifest":{"properties":[],"name":"Teleport","description":"","hasAnimatorMove":false},"isCompiled":true}'
+  typescriptHash: f49de6552ab7ba69d231d7c8d1fd5118
+  onlyWriteTrigger: 0
